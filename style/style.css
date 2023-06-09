@@ -516,8 +516,8 @@ html {
 .card-project {
   display: block;
   position: relative;
-  width: 400px;
-  height: 220px;
+  width: 25rem;
+  height: 13.75rem;
   overflow: hidden;
 }
 
@@ -529,8 +529,8 @@ html {
   left: 0;
   color: var(--bg);
   background-color: rgba(0, 0, 0, 0.9);
-  width: 400px;
-  height: 220px;
+  width: 25rem;
+  height: 13.75rem;
   -webkit-transition: all 400ms ease-out;
   -moz-transition: all 400ms ease-out;
   -o-transition: all 400ms ease-out;
@@ -552,8 +552,8 @@ html {
   opacity: 1;
   transition-delay: 0s;
   transition-duration: 0.4s;
-  width: 400px;
-  height: 50px;
+  width: 25rem;
+  height: 3.125rem;
   background-color: #0a0227;
   color: #fff;
 }
@@ -565,8 +565,8 @@ html {
 }
 
 .card-project img {
-  width: 400px;
-  height: 220px;
+  width: 25rem;
+  height: 13.75rem;
 }
 
 /* CONTACT SECTION */
@@ -795,6 +795,6 @@ html {
 
 @media (max-width: 480px) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
 }
