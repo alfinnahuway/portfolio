@@ -25,16 +25,12 @@ function sizeScroll() {
     document.body.scrollTop >= 100 ||
     document.documentElement.scrollTop >= 100
   ) {
-    linkNav.forEach((e) => {
-      e.classList.add("navpad");
-    });
+    navbarNav.classList.add("navpad");
     navbar.style.backgroundColor = "#000";
     navbar.style.transition = "background-color 0.5s linear";
   } else {
-    linkNav.forEach((e) => {
-      e.classList.remove("navpad");
-      navbar.style.backgroundColor = null;
-    });
+    navbarNav.classList.remove("navpad");
+    navbar.style.backgroundColor = null;
   }
 }
 
