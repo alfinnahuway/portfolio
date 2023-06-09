@@ -797,4 +797,13 @@ html {
   html {
     font-size: 55%;
   }
+
+  .grid-content {
+    width: 100%;
+    height: 90vh;
+  }
+
+  .grid-content .grid-container {
+    top: 165%;
+  }
 }
