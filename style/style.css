@@ -730,14 +730,17 @@ html {
   }
 
   .navbar-nav {
-    order: 2;
+    order: 1;
     position: absolute;
     top: 100%;
     right: -100%;
     background-color: #fff;
-    width: 25rem;
     height: 100vh;
     transition: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
   }
 
   .navbar-nav.check {
@@ -745,14 +748,18 @@ html {
   }
 
   .navbar-nav .link-nav {
-    padding: 1rem;
-    display: block;
+    width: 25rem;
+    padding-left: 4rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .navbar-nav .link-nav:nth-child(1) {
+    margin-top: -300px;
   }
 
   .navbar-nav .link-nav a {
     font-size: 1.5rem;
-    margin: 1.5rem;
-    padding: 0.5rem;
     color: #020607;
   }
 
