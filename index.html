@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>New Portfolio</title>
+    <title>Alfin Nahuway</title>
+    <link rel="icon" href="./images/stars.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,8 +23,8 @@
     <!-- Navbar -->
     <nav class="navbar">
       <a href="#home" class="navbar-logo"
-        ><img src="./images/stars.png" alt="Stars" class="stars-logo" /> Alfin
-        Nahuway</a
+        ><img src="./images/stars.png" alt="Stars" class="stars-logo" />
+        <span class="logo-name">Alfin Nahuway</span></a
       >
       <ul class="navbar-nav">
         <li class="link-nav">
@@ -143,8 +144,15 @@
     <!-- Experience Section -->
     <section class="experience" id="experience">
       <main class="content">
-        <h3>EXPERIENCE</h3>
+        <h3>The experience I have</h3>
         <div class="list">
+          <div class="img-experience">
+            <img
+              id="stars-logo"
+              src="./images/logo-dprd.png"
+              alt="DPRD Kota Bekasi"
+            />
+          </div>
           <div class="list-experience">
             <h5>DPRD Kota Bekasi</h5>
             <h5>Internship - Humas & Protocol</h5>
@@ -172,7 +180,7 @@
     <!-- Project Section -->
     <section class="project" id="project">
       <main class="content">
-        <h3>MY PROJECT</h3>
+        <h3>My project</h3>
         <div class="card-project">
           <img src="./images/queensteam.PNG" alt="" />
           <a href="" class="card-overlay">
@@ -196,10 +204,47 @@
             Whether you have an idea for a project or just want to chat, feel
             free to shoot me an email!
           </p>
-          <a class="link-convers" href="">
-            <i class="fa-solid fa-message fa-lg message"></i>
-            <span class="text-convers">Start a conversation</span>
-          </a>
+
+          <form action="https://formsubmit.co/alfintomy08@gmail.com" method="POST">
+            <div class="form-message">
+              <div class="form-group">
+                <div class="form-input  text">
+                  <label for="name">Name</label>
+                  <div class="input-group input-text">
+                    <i class="fa-regular fa-user fa-lg icon"></i>
+                    <input type="text" name="name" placeholder="Your name" required/>
+                  </div>
+                </div>
+
+                <div class="form-input  text">
+                  <label for="email">Email</label>
+                  <div class="input-group input-text">
+                    <i class="fa-regular fa-envelope fa-lg icon"></i>
+                    <input type="email" name="email" placeholder="Your email" required/>
+                  </div>
+                </div>
+
+                <div class="form-input area">
+                  <label for="name">Additional details</label>
+                  <div class="input-group input-area">
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="10"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="button">
+                <div class="input-group submit">
+                  <button class="submit-message" type="submit">
+                    <span class="text-message">Send message</span>
+                    <i class="fa-regular fa-paper-plane fa-lg message"></i>            
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </main>
     </section>

@@ -152,9 +152,14 @@ html {
   transition: 0.5s padding ease-in-out;
 }
 
+.navbar-logo .logo-name {
+  margin-left: 6px;
+}
+
 .navbar-logo img {
   width: 30px;
-  margin-right: 5px;
+  position: relative;
+  transform: rotate(-10deg);
 }
 
 .navbar-logo {
@@ -165,6 +170,7 @@ html {
   display: flex;
   align-items: center;
   order: 1;
+  transition: 0.8s;
 }
 
 .navbar-logo:hover {
@@ -317,7 +323,7 @@ html {
   width: 86%;
   grid-template-columns: auto auto auto;
   position: absolute;
-  top: 170%;
+  top: 180%;
 }
 
 .grid-content .grid-container .grid-item {
@@ -415,13 +421,20 @@ html {
 
 .experience .content .list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.experience .content .list .img-experience {
+  width: 9.375rem;
+}
+
+.experience .content .list .img-experience img {
+  width: 100%;
 }
 
 .experience .content .list .list-experience {
   width: 30rem;
-  padding: 2rem;
-  margin: 0 1rem;
+  padding: 1rem 1rem;
   transition: 2s ease-in-out;
 }
 
@@ -585,7 +598,7 @@ html {
 
 /* CONTACT SECTION */
 .contact {
-  padding: 15rem 7%;
+  padding: 5rem 7%;
   background-color: #ece8e9;
   display: flex;
   justify-content: center;
@@ -620,35 +633,109 @@ html {
   font-size: 1rem;
 }
 
-.conversation .link-convers {
-  width: 22rem;
-  padding: 1rem;
-  border: 3px solid #252c35;
-  transition: 0.5s linear;
+.form-message {
+  width: 45rem;
 }
 
-.conversation .message {
+.form-message .form-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 1rem;
+  gap: 15px;
+}
+
+.form-message .button {
+  display: flex;
+  justify-content: end;
+}
+
+.form-message .form-group .form-input {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.form-message .form-group .form-input.area {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.form-message .form-group .form-input label {
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-message .form-group .input-group {
+  background-color: #ece8e9;
+  border: 1px solid #252c35;
+  width: 100%;
+  color: var(--bg);
+}
+
+.form-message .form-group .input-group.input-area {
+  padding: 0.5rem 1rem;
+}
+
+.form-message .form-group .input-group .icon {
+  color: var(--bg);
+}
+
+.form-message .form-group .input-group input {
+  width: 75%;
+  padding: 1rem;
+  background: none;
+  color: var(--bg);
+  font-size: 1rem;
+  outline: none;
+  border: none;
+}
+
+.form-message .form-group .input-group textarea {
+  background: none;
+  color: var(--bg);
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  resize: vertical;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-message .submit-message {
+  cursor: pointer;
+  width: 13rem;
+  padding: 1rem;
+  border: 1px solid #252c35;
+  transition: 0.2s linear;
+  background: none;
+  outline: 0;
+}
+
+.message {
   color: #252c35;
-  width: 20px;
-  height: 20px;
   margin-right: 5px;
 }
 
-.conversation .text-convers {
-  font-size: 1.5rem;
+.text-message {
+  font-size: 1rem;
   font-weight: 400;
   color: #252c35;
+  margin-right: 2px;
 }
 
-.conversation .link-convers:hover {
+.submit-message:hover {
   background-color: #252c35;
 }
 
-.conversation .link-convers:hover .text-convers {
+.submit-message:hover .text-message {
   color: #fff;
+  outline: 0;
 }
-.conversation .link-convers:hover .message {
+.submit-message:hover .message {
   color: #fff;
+  outline: 0;
 }
 
 /* Footer */
@@ -811,6 +898,15 @@ html {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 0;
+  }
+
+  .form-message {
+    width: 30rem;
+  }
+
+  .form-message .form-input.text {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 

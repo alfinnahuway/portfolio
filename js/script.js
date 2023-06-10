@@ -74,15 +74,10 @@ window.addEventListener("scroll", activeMenu);
 // HOVER RESUME
 const resume = document.querySelector(".bg-resume");
 const resumeLink = document.querySelector(".resume .root a");
-const le = document.querySelector(
-  ".experience .content .list .list-experience"
-);
 
 resumeLink.addEventListener("mouseover", () => {
   resume.classList.add("blur-off");
-  le.classList.add("glow");
 });
 resumeLink.addEventListener("mouseleave", () => {
   resume.classList.remove("blur-off");
-  le.classList.remove("glow");
 });
