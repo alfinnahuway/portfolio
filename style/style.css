@@ -455,7 +455,7 @@ html {
 .resume .bg-resume {
   width: 100vw;
   min-height: 50vh;
-  background-image: url(../images/resume-no-blur.jpg);
+  background-image: url(../images/moon.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100rem;
@@ -574,8 +574,8 @@ html {
 
 .card-project .card-overlay:hover .text {
   opacity: 1;
-  transform: translateY(160px);
-  -webkit-transform: translateY(160px);
+  transform: translateY(10rem);
+  -webkit-transform: translateY(10rem);
 }
 
 .card-project img {
