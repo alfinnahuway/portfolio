@@ -167,6 +167,10 @@ html {
   order: 1;
 }
 
+.navbar-logo:hover {
+  filter: brightness(70%);
+}
+
 .navbar .navbar-nav {
   padding-top: 1rem;
   list-style: none;
@@ -225,7 +229,7 @@ html {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-image: url("../images/hero.webp");
+  background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -517,7 +521,7 @@ html {
 
 .project .content h3 {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   color: #202736;
   margin-bottom: 3rem;

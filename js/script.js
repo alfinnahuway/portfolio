@@ -1,8 +1,6 @@
 const navbar = document.querySelector(".navbar");
 const linkNav = document.querySelectorAll(".link-nav");
 const sec = document.querySelectorAll("section");
-const navLogo = document.querySelector(".navbar-logo");
-const navStars = document.querySelector(".stars-logo");
 
 const navbarNav = document.querySelector(".navbar-nav");
 
@@ -72,16 +70,6 @@ function activeMenu() {
 activeMenu();
 
 window.addEventListener("scroll", activeMenu);
-
-// HOVER LOGO
-navLogo.addEventListener("mouseover", () => {
-  navLogo.style.color = "#bfbfbf";
-  navStars.setAttribute("src", "./images/stars2.png");
-});
-navLogo.addEventListener("mouseleave", () => {
-  navLogo.style.color = "#fff";
-  navStars.setAttribute("src", "./images/stars.png");
-});
 
 // HOVER RESUME
 const resume = document.querySelector(".bg-resume");
