@@ -333,6 +333,7 @@ html {
 }
 
 .skills-content .skills-container .skills-item {
+  font-family: "Roboto Slab", serif;
   background-color: #fff;
   height: 30rem;
   color: #000;
@@ -382,7 +383,6 @@ html {
 }
 
 .skills-content .skills-container p {
-  font-family: "Roboto Slab", serif;
   font-size: 1rem;
   letter-spacing: 0.2px;
   font-weight: 400;
@@ -624,12 +624,6 @@ html {
   align-items: center;
 }
 
-.contact .content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .contact .content h3 {
   font-size: 2rem;
   font-weight: 400;
@@ -639,6 +633,7 @@ html {
 }
 
 .contact .content .conversation {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -646,10 +641,11 @@ html {
   text-align: center;
   color: var(--bg);
 }
+
 .contact .content .conversation p {
   margin-bottom: 2rem;
   color: var(--bg);
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .form-message {
@@ -682,7 +678,7 @@ html {
 
 .form-message .form-group .form-input label {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
 }
 
@@ -702,7 +698,7 @@ html {
 }
 
 .form-message .form-group .input-group input {
-  width: 75%;
+  width: 100%;
   padding: 1rem;
   background: none;
   color: var(--bg);
@@ -932,7 +928,12 @@ html {
 
 @media (max-width: 480px) {
   html {
-    font-size: 80%;
+    font-size: 60%;
+  }
+
+  .about .content .description p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 
   .skills-content {
@@ -941,6 +942,18 @@ html {
   }
 
   .skills-content .skills-container {
-    top: 185%;
+    top: 180%;
+  }
+
+  .skills-content .skills-container .skills-item h4 {
+    font-size: 1.4rem;
+  }
+
+  .skills-content .skills-container p {
+    font-size: 1.4rem;
+  }
+
+  .skills-content .skills-container .skills-item {
+    height: 30rem;
   }
 }
