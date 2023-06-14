@@ -138,12 +138,12 @@ table {
 html {
   scroll-behavior: smooth;
 }
-/* NAVBAR */
+/* NAVBAR SECTION */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 7%;
+  padding: 0 4%;
   position: fixed;
   top: 0;
   left: 0;
@@ -164,7 +164,7 @@ html {
 
 .navbar-logo {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 400;
   font-style: italic;
   color: #fff;
   display: flex;
@@ -178,7 +178,7 @@ html {
 }
 
 .navbar .navbar-nav {
-  padding-top: 1rem;
+  padding: 1.2rem 0;
   list-style: none;
   order: 3;
   transition: 0.5s ease-out;
@@ -188,7 +188,7 @@ html {
 }
 
 .navbar-nav .link-nav {
-  height: 60px;
+  height: 50px;
   padding: 0 1rem;
   margin: 0 -2px;
   display: flex;
@@ -198,6 +198,7 @@ html {
 
 .navbar-nav.navpad {
   padding-top: 0;
+  padding-bottom: 0;
 }
 .active {
   background-color: var(--primary);
@@ -223,6 +224,7 @@ html {
 #hamburger-menu {
   display: none;
 }
+/* END NAVBAR SECTION */
 
 /* ALL CONTENT */
 .content {
@@ -235,7 +237,7 @@ html {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-image: url("../images/hero.jpg");
+  background-image: url("../images/hero.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -252,7 +254,7 @@ html {
 }
 
 .hero .content p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 1.5rem;
   text-align: center;
 }
@@ -268,11 +270,12 @@ html {
   transform: translateX(0);
   opacity: 1;
 }
+/* END HERO SECTION */
 
 /* ABOUT SECTION */
 .about {
   background-color: #fff;
-  padding: 5rem 7%;
+  padding: 5rem 4%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,11 +294,14 @@ html {
 }
 
 .about .content .description p {
-  color: var(--bg);
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #333333;
   padding: 0 3rem;
   text-align: center;
-  font-weight: 400;
-  line-height: 1.3rem;
   margin-bottom: 15rem;
 }
 
@@ -307,7 +313,7 @@ html {
   text-decoration: underline;
 }
 
-.grid-content {
+.skills-content {
   width: 100%;
   height: 40vh;
   background-color: #f0f0f0;
@@ -318,7 +324,7 @@ html {
   flex-direction: column;
 }
 
-.grid-content .grid-container {
+.skills-content .skills-container {
   display: grid;
   width: 86%;
   grid-template-columns: auto auto auto;
@@ -326,7 +332,7 @@ html {
   top: 180%;
 }
 
-.grid-content .grid-container .grid-item {
+.skills-content .skills-container .skills-item {
   background-color: #fff;
   height: 30rem;
   color: #000;
@@ -336,12 +342,12 @@ html {
   flex-direction: column;
 }
 
-.grid-content .grid-container {
+.skills-content .skills-container {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
-.grid-content .grid-container .grid-item .icon {
+.skills-content .skills-container .skills-item .icon {
   margin: 0 auto 1rem;
   width: 5rem;
   height: 5rem;
@@ -352,40 +358,46 @@ html {
   align-items: center;
 }
 
-.grid-content .grid-container .item1 {
+.skills-content .skills-container .item1 {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border: 1px solid #dadada;
 }
-.grid-content .grid-container .item2 {
+.skills-content .skills-container .item2 {
   border-top: 1px solid #dadada;
   border-bottom: 1px solid #dadada;
 }
-.grid-content .grid-container .item3 {
+.skills-content .skills-container .item3 {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid #dadada;
 }
 
-.grid-content .grid-container p {
-  margin-bottom: 2rem;
-}
-
-.grid-content .grid-container .grid-item h4 {
+.skills-content .skills-container .skills-item h4 {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #090909;
+  color: #333333;
   margin-bottom: 2rem;
 }
 
-.grid-content .grid-container .img-skills {
+.skills-content .skills-container p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.skills-content .skills-container .img-skills {
   display: flex;
   justify-content: center;
   padding: 1rem 2rem;
   flex-wrap: wrap;
 }
-.grid-content .grid-container .img-skills img {
+.skills-content .skills-container .img-skills img {
   width: 4rem;
   height: 4rem;
   padding: 4px;
@@ -403,7 +415,7 @@ html {
 
 /* EXPERIENCE SECTION */
 .experience {
-  padding: 5rem 7%;
+  padding: 5rem 4%;
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
@@ -414,7 +426,6 @@ html {
 .experience .content h3 {
   text-align: center;
   font-size: 2rem;
-  font-weight: 400;
   margin-bottom: 3rem;
   color: var(--bg);
 }
@@ -422,6 +433,9 @@ html {
 .experience .content .list {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .experience .content .list .img-experience {
@@ -433,13 +447,13 @@ html {
 }
 
 .experience .content .list .list-experience {
-  width: 30rem;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #333333;
   padding: 1rem 1rem;
-  transition: 2s ease-in-out;
-}
-
-.list .list-experience.glow {
-  box-shadow: 10px 10px 10rem #888888;
+  width: 100%;
 }
 
 .experience .content .list-experience h5 {
@@ -450,12 +464,13 @@ html {
 }
 
 .experience .content p {
+  font-size: 1rem;
   color: var(--bg);
   line-height: 1.2;
 }
 
 .resume {
-  width: 100;
+  width: 100%;
   min-height: 40vh;
   display: flex;
   position: relative;
@@ -466,7 +481,7 @@ html {
 }
 
 .resume .bg-resume {
-  width: 100vw;
+  width: 100%;
   min-height: 50vh;
   background-image: url(../images/moon.jpg);
   background-repeat: no-repeat;
@@ -501,7 +516,7 @@ html {
 .resume .root a {
   display: inline-block;
   padding: 1rem 3rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 3rem;
   color: #fff;
   border: 1px solid #fff;
@@ -519,7 +534,7 @@ html {
 
 /* PROJECT SECTION */
 .project {
-  padding: 4rem 7%;
+  padding: 4rem 4%;
   background-color: #fff;
   display: flex;
   justify-content: center;
@@ -585,6 +600,10 @@ html {
   color: #fff;
 }
 
+.card-project .card-overlay .text .title {
+  margin-left: 5px;
+}
+
 .card-project .card-overlay:hover .text {
   opacity: 1;
   transform: translateY(10rem);
@@ -598,7 +617,7 @@ html {
 
 /* CONTACT SECTION */
 .contact {
-  padding: 5rem 7%;
+  padding: 5rem 4%;
   background-color: #ece8e9;
   display: flex;
   justify-content: center;
@@ -630,7 +649,7 @@ html {
 .contact .content .conversation p {
   margin-bottom: 2rem;
   color: var(--bg);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .form-message {
@@ -740,7 +759,7 @@ html {
 
 /* Footer */
 .footer {
-  padding: 5rem 7%;
+  padding: 5rem 4%;
   background-color: #252c35;
   display: flex;
   justify-content: center;
@@ -800,14 +819,14 @@ html {
 /* LAPTOP */
 @media (max-width: 1200px) {
   html {
-    font-size: 80%;
+    font-size: 100%;
   }
 }
 
 /* TABLET */
 @media (max-width: 1024px) {
   html {
-    font-size: 75%;
+    font-size: 90%;
   }
 
   .navbar {
@@ -840,13 +859,14 @@ html {
 
   .navbar-nav .link-nav {
     width: 18rem;
+    height: 40px;
     padding-left: 2.5rem;
     display: flex;
     justify-content: flex-start;
   }
 
   .navbar-nav .link-nav:nth-child(1) {
-    margin-top: -350px;
+    margin-top: -390px;
   }
 
   .navbar-nav .link-nav a {
@@ -863,21 +883,21 @@ html {
     padding: 0 1rem;
   }
 
-  .grid-content {
+  .skills-content {
     width: 100%;
-    height: 120vh;
+    height: 140vh;
   }
 
-  .grid-content .grid-container {
+  .skills-content .skills-container {
     grid-template-columns: 100%;
-    top: 175%;
+    top: 185%;
   }
 
-  .grid-content .grid-container .grid-item {
+  .skills-content .skills-container .skills-item {
     height: 25rem;
   }
 
-  .grid-content .grid-container .item1 {
+  .skills-content .skills-container .item1 {
     border-top: 1px solid #dadada;
     border-right: 1px solid #dadada;
     border-bottom: 0;
@@ -886,11 +906,11 @@ html {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 0;
   }
-  .grid-content .grid-container .item2 {
+  .skills-content .skills-container .item2 {
     border: 1px solid #dadada;
   }
 
-  .grid-content .grid-container .item3 {
+  .skills-content .skills-container .item3 {
     border-top: 1px solid #dadada;
     border-right: 1px solid #dadada;
     border-top: 0;
@@ -912,15 +932,15 @@ html {
 
 @media (max-width: 480px) {
   html {
-    font-size: 55%;
+    font-size: 80%;
   }
 
-  .grid-content {
+  .skills-content {
     width: 100%;
-    height: 90vh;
+    height: 120vh;
   }
 
-  .grid-content .grid-container {
-    top: 165%;
+  .skills-content .skills-container {
+    top: 185%;
   }
 }
