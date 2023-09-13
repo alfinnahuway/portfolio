@@ -929,6 +929,12 @@ html {
     border-top-right-radius: 0;
   }
 
+  .project .content .container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+  }
+
   .form-message {
     width: 30rem;
   }
