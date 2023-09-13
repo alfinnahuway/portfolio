@@ -553,6 +553,12 @@ html {
   flex-direction: column;
 }
 
+.project .content .container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
 .project .content h3 {
   font-size: 2rem;
   font-weight: 400;
